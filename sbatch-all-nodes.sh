@@ -19,9 +19,10 @@ fi
 
 COUNT=0
 
-while IFS= read -r node || [ -n "$node" ]; do
+while IFS= read -r line || [ -n "$line" ]; do
     # skip empty lines and comments
-    [[ -z "$node" || "$node" == \#* ]] && continue
+    [[ -z "$line" || "$line" == \#* ]] && continue
+    node="${line%% *}"
 
     echo "Submitting job for node: ${node}"
     sbatch --account=scavenger --partition=scavenger --cpus-per-task=1 --gres=gpu:1 --mem=4gb --qos=scavenger --time=0-20:00:00 \

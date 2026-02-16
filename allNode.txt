@@ -1,11 +1,9 @@
-tron65
-tron66
-tron67
-tron68
-tron69
-vulcan00
-vulcan01
-vulcan02
-vulcan03
-vulcan04
-vulcan05
+vulcan06 gpu:p6000:8
+vulcan06 gpu:p6000:8
+vulcan06 gpu:p6000:8
+vulcan07 gpu:p6000:8
+vulcan07 gpu:p6000:8
+vulcan07 gpu:p6000:8
+vulcan08 gpu:gtx1080ti:8
+vulcan08 gpu:gtx1080ti:8
+vulcan08 gpu:gtx1080ti:8
